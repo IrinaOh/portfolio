@@ -1,14 +1,45 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Portfolio</title>
-    <%= csrf_meta_tags %>
+	<html lang="en">
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+	<head>
 
-  <body>
-    <%= yield %>
-  </body>
+	    <%= csrf_meta_tags %>
+
+	    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+
+	    <title>Portfolio</title>
+
+	    <!-- Bootstrap Core CSS -->
+	    <link href="../assets/bootstrap.css" rel="stylesheet">
+
+	    <!-- Custom CSS -->
+	    <link href="../assets/application.css" rel="stylesheet">
+
+	    <!-- Custom Fonts -->
+	    <link href="../assets/fonts/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+	</head>
+
+	<body>
+
+	   <%=yield%>
+
+	    <!-- jQuery -->
+	    <script src="../assets/jquery.js"></script>
+
+	    <!-- Bootstrap Core JavaScript -->
+	    <script src="../assets/bootstrap.js"></script>
+
+	    <!-- Javascript -->
+	    <script src="../assets/application.js"></script>
+
+	</body>
+
 </html>
