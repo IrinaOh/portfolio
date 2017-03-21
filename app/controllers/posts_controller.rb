@@ -16,9 +16,13 @@ class PostsController < ApplicationController
 		@post = Post.new
 	end
 
+	def show
+		@post = Post.find(params [:id])
+	end
+
 	def edit
 		@post = post.find(params [:id])
-		if @post.update_attributes(title: params[:post][:title], body: params[:post][:body)
+		if @post.update_attributes(title: params[:post][:title], body: params[:post][:body])
 			redirect_to posts_path
 		else
 			render 'edit'

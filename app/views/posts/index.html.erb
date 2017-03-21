@@ -1,0 +1,5 @@
+<% @posts.each do |post| %>
+	<h1><%= post.title %></h1>
+	<h5><%= post.created_at.strftime('%B, %d, %Y') %></h5>
+	<p><%= post.message %></p>
+<% end %>
